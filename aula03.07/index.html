@@ -1,0 +1,61 @@
+<!-- <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+<body>
+    <h1> Objeto J.S </h1>
+
+    <button onclick="cadastrarProduto()" > cadastrar produto </button>
+
+    <script src="produto.js"></script>
+    <script src="script.js"></script> -->
+<!-- </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD de Produtos</title>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>CRUD de Produtos</h1>
+        
+        <form id="product-form">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Descrição:</label>
+                <textarea id="description" name="description" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="value">Valor:</label>
+                <input type="number" id="price" name="value" step=".01" required>
+            </div>
+            
+            <div class="form-group">
+                <button type="button" id="btn-primary" onclick="cadastrar()">Cadastrar</button>
+                <button type="button" id="btn btn-primary" onclick="searchProduct()">Pesquisar</button>
+                <button type="button" id="btn btn-primary" onclick="editProduct()">Editar</button>
+                <button type="button" id="btn btn-danger" onclick="deleteProduct()">Deletar</button>
+            </div>
+        </form>
+        
+        <div id="product-list">
+            <!-- Aqui será exibida a lista de produtos, se necessário -->
+        </div>
+    </div>
+     
+    <script src="script.js"></script>
+</body>
+</html>
